@@ -14,10 +14,10 @@ async function generatePDF() {
         format: 'A4',
         printBackground: true,
         margin: {
-            top: '0.5in',
-            bottom: '0.5in',
-            left: '0.5in',
-            right: '0.5in'
+            top: '0.4in',
+            bottom: '0.4in',
+            left: '0.4in',
+            right: '0.4in'
         }
     });
 
