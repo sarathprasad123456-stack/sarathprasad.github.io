@@ -4,96 +4,226 @@
     <meta charset="UTF-8">
     <title>Sarath Prasad - Resume</title>
     <style>
-        body { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: #000; max-width: 800px; margin: 0 auto; padding: 20px; font-size: 11pt; }
-        h1 { margin-bottom: 2px; font-size: 20pt; text-transform: uppercase; color: #000; text-align: center; }
-        .subtitle { font-size: 11pt; color: #000; margin-bottom: 5px; text-align: center; font-weight: bold; }
-        .contact { font-size: 10pt; color: #000; margin-bottom: 15px; text-align: center; }
-        .contact a { color: #000; text-decoration: none; }
-        h2 { border-bottom: 1px solid #000; padding-bottom: 2px; font-size: 12pt; margin-top: 15px; margin-bottom: 8px; text-transform: uppercase; color: #000; }
-        h3 { font-size: 11pt; margin-bottom: 2px; margin-top: 10px; color: #000; display: flex; justify-content: space-between; }
-        .date { font-weight: normal; color: #000; font-size: 11pt; }
-        .company { font-style: italic; color: #000; margin-bottom: 6px; font-size: 11pt; }
-        p { margin-top: 0; margin-bottom: 10px; }
-        ul { margin-top: 5px; padding-left: 15px; margin-bottom: 10px; }
-        li { margin-bottom: 4px; text-align: left; }
-        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; font-size: 11pt; margin-bottom: 10px; }
-        @media print { body { padding: 0; } }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6; 
+            color: #1f2937; /* Gray 800 */
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 24px; 
+            font-size: 10.5pt; 
+            background-color: #ffffff;
+        }
+        
+        h1 { 
+            margin-bottom: 4px; 
+            font-size: 22pt; 
+            text-transform: uppercase; 
+            color: #111827; 
+            text-align: center; 
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        .subtitle { 
+            font-size: 11.5pt; 
+            color: #374151; 
+            margin-bottom: 8px; 
+            text-align: center; 
+            font-weight: 600; 
+            letter-spacing: 0.5px;
+        }
+
+        .contact { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 9.5pt; 
+            color: #4b5563; 
+            margin-bottom: 24px; 
+            text-align: center; 
+        }
+
+        .contact a { 
+            color: #2563eb; 
+            text-decoration: none; 
+            font-weight: 500;
+        }
+
+        .separator {
+            color: #9ca3af;
+        }
+
+        p { margin-top: 0; margin-bottom: 20px; text-align: justify; }
+
+        h2 { 
+            border-bottom: 1px solid #e5e7eb; 
+            padding-bottom: 4px; 
+            font-size: 12.5pt; 
+            margin-top: 24px; 
+            margin-bottom: 12px; 
+            text-transform: uppercase; 
+            color: #111827; 
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        h3 { 
+            font-size: 11.5pt; 
+            margin-bottom: 2px; 
+            margin-top: 16px; 
+            color: #111827; 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: 600;
+        }
+
+        .date { 
+            font-weight: 500; 
+            color: #6b7280; 
+            font-size: 10pt; 
+        }
+
+        .company { 
+            font-style: italic; 
+            color: #4b5563; 
+            margin-bottom: 8px; 
+            font-size: 10.5pt; 
+            font-weight: 500;
+        }
+
+        ul { margin-top: 0; padding-left: 18px; margin-bottom: 16px; }
+        
+        li { margin-bottom: 6px; text-align: justify; color: #374151; }
+
+        .skills-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 12px;
+            font-size: 10.5pt;
+            color: #374151;
+            margin-bottom: 16px;
+        }
+
+        .skill-node {
+            font-weight: 500;
+        }
+
+        .skill-dot {
+            color: #9ca3af;
+        }
+
+        .tools-list {
+            margin-bottom: 16px;
+        }
+
+        .tool-category {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        @media print { 
+            body { padding: 0; } 
+            h3, .company { page-break-after: avoid; }
+            ul { page-break-before: avoid; }
+        }
     </style>
 </head>
 <body>
     <h1>SARATH PRASAD</h1>
     <div class="subtitle">Senior Technical Support Engineer – Customer Success & Adoption</div>
     <div class="contact">
-        Bangalore, India | +91 82815 43558 | sarathprasad123456@gmail.com | linkedin.com/in/sarath-prasad-1aa71a193
+        <span>Bangalore, India</span>
+        <span class="separator">|</span>
+        <span>+91 82815 43558</span>
+        <span class="separator">|</span>
+        <a href="mailto:sarathprasad123456@gmail.com">sarathprasad123456@gmail.com</a>
+        <span class="separator">|</span>
+        <a href="https://linkedin.com/in/sarath-prasad-1aa71a193">linkedin.com/in/sarath-prasad-1aa71a193</a>
     </div>
 
     <p>Senior Technical Support Engineer with a strong Customer Success focus, supporting US-based SaaS customers across onboarding, adoption, and retention stages. Proven in leading automation initiatives, driving outcome and value-based customer engagements, and collaborating cross-functionally with Sales, Support, and Product teams. Ready to transition into a people-management role with a track record of ownership, mentorship, and operational leadership.</p>
     
     <h2>CORE STRENGTHS</h2>
-    <div class="skills-list">
-        • Customer Lifecycle Ownership (Onboard, Use, Extend) • Customer Success & Adoption • Process Automation & Operational Efficiency • Cross-functional Collaboration • Mentorship & Leadership Readiness • Escalation & Incident Management • Customer Advocacy • Data-informed Decision Making • Critical Thinking
+    <div class="skills-inline">
+        <span class="skill-node">Customer Lifecycle Ownership (Onboard, Use, Extend)</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Customer Success & Adoption</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Process Automation & Operational Efficiency</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Cross-functional Collaboration</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Mentorship & Leadership Readiness</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Escalation & Incident Management</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Customer Advocacy</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Data-informed Decision Making</span> <span class="skill-dot">•</span>
+        <span class="skill-node">Critical Thinking</span>
     </div>
 
     <h2>PROJECTS</h2>
-    <h3><span>AI Support Agent — Autonomous RAG Pipeline for Zoho Desk</span><span class="date">[Mar 2026 – Present]</span></h3>
+    <h3><span>AI Support Agent — Autonomous RAG Pipeline for Zoho Desk</span><span class="date">Mar 2026 – Present</span></h3>
     <ul>
         <li>Conceptualized and directed the end-to-end development of a production-grade AI Support Agent, leveraging agentic AI tools (Antigravity) to build a multi-provider LLM pipeline (OpenAI, Anthropic Claude, Ollama, Gemini) integrated with Zoho Desk via OAuth 2.0. Architected the logic for a full RAG (Retrieval-Augmented Generation) pipeline: defining ticket classification rules, semantic search workflows, and confidence-based escalation logic. Designed the requirements and guided the implementation of a web dashboard with real-time log streaming, KB management (bulk document ingestion), and a test sandbox.</li>
     </ul>
 
     <h2>PROFESSIONAL EXPERIENCE</h2>
-    <h3><span>Senior Technical Support Engineer (Customer Success – Focused)</span><span class="date">[Oct 2023 – Present]</span></h3>
+    
+    <h3><span>Senior Technical Support Engineer (Customer Success – Focused)</span><span class="date">Oct 2023 – Present</span></h3>
     <div class="company">SimplifyEm Property Management Software (TReXGlobal Inc.) | Remote – Supporting US Customers</div>
     <ul>
         <li><strong>AI Initiative Led:</strong> Conceptualized and directed the end-to-end development of a production-grade AI Support Agent, leveraging agentic AI tools (Antigravity) to build a multi-provider LLM pipeline (OpenAI, Anthropic Claude, Ollama, Gemini) integrated with Zoho Desk via OAuth 2.0. Architected the logic for a full RAG (Retrieval-Augmented Generation) pipeline: defining ticket classification rules, semantic search workflows, and confidence-based escalation logic. Designed the requirements and guided the implementation of a web dashboard with real-time log streaming, KB management (bulk document ingestion), and a test sandbox.</li>
-        <li>Own end-to-end customer engagement for a portfolio of US-based business customers (mid-to-large accounts) across onboarding, adoption, and retention</li>
-        <li>Led premium customer engagement workflows using automation and proactive outreach, reducing churn risk indicators and repeat support dependency by ~20–25% across premium accounts</li>
-        <li>Drive outcome and value-based customer conversations aligned to customer business goals</li>
-        <li>Designed and implemented automated follow-up workflows for unattended trainings and incomplete setups, improving engagement by 50%+</li>
-        <li>Acted as the customer advocate by prioritizing and synthesizing customer feedback, collaborating with Product and Engineering teams to drive usability improvements that reduced feature-related support tickets by ~15–20%</li>
-        <li>Coordinate complex feature implementations (Tenant Screening) with third-party partners (CIC, Trendsource)</li>
-        <li>Mentored customers through personalized 1:1 training sessions, improving feature adoption rates by ~30% and reducing repeat support requests by 20%+</li>
-        <li>Support expansion discussions and demo follow-ups in partnership with Sales and Customer Success stakeholders</li>
-        <li>Documented recurring issues, root causes, and approved workarounds, and proactively shared them with the team, cutting average resolution time by ~45-50% and significantly reducing duplicate troubleshooting efforts</li>
-        <li>Created and maintained internal communication channels to share ongoing bugs, known issues, and real-time updates, ensuring the team stayed aligned and customers received consistent responses</li>
+        <li>Own end-to-end customer engagement for a portfolio of US-based business customers (mid-to-large accounts) across onboarding, adoption, and retention.</li>
+        <li>Led premium customer engagement workflows using automation and proactive outreach, reducing churn risk indicators and repeat support dependency by ~20–25% across premium accounts.</li>
+        <li>Drive outcome and value-based customer conversations aligned to customer business goals.</li>
+        <li>Designed and implemented automated follow-up workflows for unattended trainings and incomplete setups, improving engagement by 50%+.</li>
+        <li>Acted as the customer advocate by prioritizing and synthesizing customer feedback, collaborating with Product and Engineering teams to drive usability improvements that reduced feature-related support tickets by ~15–20%.</li>
+        <li>Coordinate complex feature implementations (Tenant Screening) with third-party partners (CIC, Trendsource).</li>
+        <li>Mentored customers through personalized 1:1 training sessions, improving feature adoption rates by ~30% and reducing repeat support requests by 20%+.</li>
+        <li>Support expansion discussions and demo follow-ups in partnership with Sales and Customer Success stakeholders.</li>
+        <li>Documented recurring issues, root causes, and approved workarounds, and proactively shared them with the team, cutting average resolution time by ~45-50% and significantly reducing duplicate troubleshooting efforts.</li>
+        <li>Created and maintained internal communication channels to share ongoing bugs, known issues, and real-time updates, ensuring the team stayed aligned and customers received consistent responses.</li>
     </ul>
 
-    <h3><span>Technical Support Engineer</span><span class="date">[Jan 2021 – Oct 2023]</span></h3>
+    <h3><span>Technical Support Engineer</span><span class="date">Jan 2021 – Oct 2023</span></h3>
     <div class="company">Zoho Corporation Pvt. Ltd. | Chengalpattu, India</div>
     <ul>
-        <li>Delivered enterprise-grade SaaS support across voice, chat, and email channels</li>
-        <li>Collaborated with Sales, Renewals, and Product teams to resolve escalations and improve customer satisfaction</li>
-        <li>Drove onboarding and cross-product adoption through proactive customer engagement</li>
-        <li>Influenced process improvements by identifying recurring support patterns and gaps</li>
+        <li>Delivered enterprise-grade SaaS support across voice, chat, and email channels.</li>
+        <li>Collaborated with Sales, Renewals, and Product teams to resolve escalations and improve customer satisfaction.</li>
+        <li>Drove onboarding and cross-product adoption through proactive customer engagement.</li>
+        <li>Influenced process improvements by identifying recurring support patterns and gaps.</li>
     </ul>
 
-    <h3><span>Campus Manager</span><span class="date">[Sep 2017 – Jan 2019]</span></h3>
+    <h3><span>Campus Manager</span><span class="date">Sep 2017 – Jan 2019</span></h3>
     <div class="company">KrazyBee | Coimbatore, India</div>
     <ul>
-        <li>Represented KrazyBee on campus, driving user acquisition, onboarding, and customer engagement initiatives</li>
-        <li>Led on-ground marketing, verification, and support efforts to establish a strong campus presence</li>
-        <li>Acted as the primary point of contact between users and the company, ensuring smooth issue resolution and adoption</li>
-        <li>Contributed to rapid growth of the active user base at Karpagam Academy of Higher Education</li>
+        <li>Represented KrazyBee on campus, driving user acquisition, onboarding, and customer engagement initiatives.</li>
+        <li>Led on-ground marketing, verification, and support efforts to establish a strong campus presence.</li>
+        <li>Acted as the primary point of contact between users and the company, ensuring smooth issue resolution and adoption.</li>
+        <li>Contributed to rapid growth of the active user base at Karpagam Academy of Higher Education.</li>
     </ul>
 
     <h2>LEADERSHIP READINESS & IMPACT</h2>
     <ul>
-        <li>Led cross-functional initiatives to improve customer onboarding and engagement workflows</li>
-        <li>Recognized for influencing without authority and driving adoption of new processes</li>
-        <li>Frequently acted as an escalation point and knowledge resource for peers and customers</li>
-        <li>Identified low cross-team interaction and proactively initiated a company-wide football tournament by launching a post on Zoho Connect, creating collaboration channels, enabling team formation, and executing the event involving 100+ teams, strengthening cross-team relationships, morale, and community in Zoho</li>
-        <li>Served as Captain of Zoho Heat FC, leading the team to the Quarter Finals, demonstrating team leadership, strategic thinking, and accountability</li>
+        <li>Led cross-functional initiatives to improve customer onboarding and engagement workflows.</li>
+        <li>Recognized for influencing without authority and driving adoption of new processes.</li>
+        <li>Frequently acted as an escalation point and knowledge resource for peers and customers.</li>
+        <li>Identified low cross-team interaction and proactively initiated a company-wide football tournament by launching a post on Zoho Connect, creating collaboration channels, enabling team formation, and executing the event involving 100+ teams, strengthening cross-team relationships, morale, and community in Zoho.</li>
+        <li>Served as Captain of Zoho Heat FC, leading the team to the Quarter Finals, demonstrating team leadership, strategic thinking, and accountability.</li>
     </ul>
 
     <h2>EDUCATION</h2>
-    <p><strong>B.Tech in Aerospace Engineering</strong><br>
-    Karpagam Academy of Higher Education | 2016 – 2020 | GPA: 7.4</p>
+    <div style="margin-bottom: 20px;">
+        <strong>B.Tech in Aerospace Engineering</strong><br>
+        <span style="color: #4b5563;">Karpagam Academy of Higher Education | 2016 – 2020 | GPA: 7.4</span>
+    </div>
 
     <h2>TOOLS & PLATFORMS</h2>
-    <ul>
-        <li><strong>CRM & Support:</strong> Zoho CRM, Salesforce, Zoho Desk, Zoho Voice, Zoho SalesiQ</li>
-        <li><strong>Automation & Integrations:</strong> Zoho Flow, CRM Workflow Rules, Zapier</li>
-        <li><strong>Business Operations:</strong> Zoho Books, Zoho Invoice, Zoho Expense</li>
-        <li><strong>Productivity Suite:</strong> Zoho One, Google Workspace, MS Office</li>
-    </ul>
+    <div class="tools-list">
+        <span class="tool-category">CRM & Support:</span> Zoho CRM, Salesforce, Zoho Desk, Zoho Voice, Zoho SalesiQ<br>
+        <span class="tool-category">Automation & Integrations:</span> Zoho Flow, CRM Workflow Rules, Zapier<br>
+        <span class="tool-category">Business Operations:</span> Zoho Books, Zoho Invoice, Zoho Expense<br>
+        <span class="tool-category">Productivity Suite:</span> Zoho One, Google Workspace, MS Office
+    </div>
 </body>
 </html>
